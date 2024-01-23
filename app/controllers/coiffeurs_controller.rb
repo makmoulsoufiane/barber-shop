@@ -4,6 +4,10 @@ class CoiffeursController < ApplicationController
   end
 
   def new
-    @coiffeur=Coiffeur.new
+    @coiffeur= Coiffeur.new
+  end
+
+  def show
+    @coiffeur =Coiffeur.find(params[:id])
   end
 end
