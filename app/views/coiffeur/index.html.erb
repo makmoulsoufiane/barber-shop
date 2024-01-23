@@ -1,0 +1,22 @@
+<!-- app/views/coiffeurs/index.html.erb -->
+
+<h1>coiffeur</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Availability</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @coiffeurs.each do |coiffeur| %>
+      <tr>
+        <td><%= coiffeur.name %></td>
+        <td><%= coiffeur.availability ? 'Available' : 'Not Available' %></td>
+        <td><%= coiffeur.price %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
