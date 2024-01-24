@@ -249,12 +249,8 @@ body {
 .footer-social-icon .fa-instagram {
   color: #DD4B39;
 }
-.banner {
-  background-size: cover;
-  background-position: center;
-  padding: 200px 0;
 
-video {
+.video {
   position: relative;
   width: 100%;
   video,
@@ -266,4 +262,13 @@ video {
   height: 0;
   padding-top: 56.25%; /* Ratio 16:9 pour la hauteur proportionnelle à la largeur */
   object-fit: cover;
-  }}
+  }
+}
+.video-banner {
+  position: relative;
+  h1 {
+    position: absolute;
+    top:23px;
+    left:12px;
+  }
+}
