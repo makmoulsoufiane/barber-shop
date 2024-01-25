@@ -7,5 +7,6 @@ class CoiffeursController < ApplicationController
   end
   def show
     @coiffeur =Coiffeur.find(params[:id])
+    @booking = Booking.new
   end
 end
