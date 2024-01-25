@@ -12,3 +12,4 @@ Coiffeur.create!(user_id: User.second.id,availability:true, price: 100 )
 Coiffeur.create!(user_id: User.third.id,availability:true, price: 100 )
 Coiffeur.create!(user_id: User.fourth.id,availability:true, price: 100 )
 Coiffeur.create!(user_id: User.fifth.id,availability:true, price: 100 )
+
