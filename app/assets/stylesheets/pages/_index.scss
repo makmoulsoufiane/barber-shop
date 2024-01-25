@@ -1,5 +1,6 @@
 // Import page-specific CSS files here.
 @import "home";
+@import "login";
 
 /* before adding the img to the div with the
 "card-img" class, remove css styles
@@ -160,4 +161,9 @@ then set the desired styles for .card-img. */
 
 .card-btn:active {
   transform: translateY(3px);
+}
+
+.barber-img{
+  width: 96px;
+  height: 96px;
 }
