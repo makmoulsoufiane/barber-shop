@@ -1,0 +1,17 @@
+.show-page{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+  .right-div {
+    width:30%;
+    height: 50vh;
+    background-color: blueviolet;
+  }
+  .left-div {
+    width:70%;
+    height: 50vh;
+    background-color: red;
+
+  }
+}

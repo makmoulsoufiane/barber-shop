@@ -4,5 +4,4 @@ class Coiffeur < ApplicationRecord
   has_many :clients, through: :bookings, dependent: :destroy
   has_one_attached :photo
 
-  validates :name, uniqueness: true, presence: true
 end
