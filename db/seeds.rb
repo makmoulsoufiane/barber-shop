@@ -1,7 +1,7 @@
 Coiffeur.destroy_all
 User.destroy_all
 
-User.create!(name: "soufiane", email: "user@hotmail.com", password: "123456", phone_number: "0021264879856")
+User.create!(name: "soufiane11", email: "user@hotmail.com", password: "123456", phone_number: "0021264879856")
 User.create!(name: "mohamed", email: "use1r@hotmail.com", password: "123456", phone_number: "0021264879856")
 User.create!(name: "adil", email: "user2@hotmail.com", password: "123456", phone_number: "0021264879856")
 User.create!(name: "brahim", email: "user3@hotmail.com", password: "123456", phone_number: "0021264879856")
