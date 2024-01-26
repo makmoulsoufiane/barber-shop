@@ -25,7 +25,8 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
-  background-color: #3498db; /* Nouvelle couleur de fond pour les étapes */
+  background-color: #f38e5f;
+
 }
 
 .step:hover {
@@ -297,7 +298,7 @@ body {
   transform: translate(-50%, -50%);
   padding: 15px 20px;
   font-size: 18px;
-  background-color: #3498db;
+  background-color: #f38e5f;
   color: #fff;
   border: none;
   cursor: pointer;
