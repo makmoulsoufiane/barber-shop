@@ -14,6 +14,7 @@
       <%= simple_form_for(@booking) do |f| %>
         <%= f.input :start %>
         <%= f.input :end %>
+        <%= f.input :coiffeur_id, as: :hidden, input_html: {value: @coiffeur.id} %>
         <%= f.submit %>
       <% end %>
     </div>
