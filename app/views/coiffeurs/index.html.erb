@@ -8,10 +8,9 @@
         <%= image_tag "" %>
         <div class="card">
           <div class="card-img">
-            <%= image_tag "https://res.cloudinary.com/ddxcxbk0w/image/upload/v1706183059/barber_iilmub.png", class: "barber-img" %>
+            <%= image_tag coiffeur.imagelink, class: "barber-img" %>
           </div>
           <div class="card-title"><%= coiffeur.user.name %></div>
-          <div class="card-subtitle"><%= coiffeur.price %></div>
           <hr class="card-divider">
           <div class="card-footer">
               <div class="card-price"><span>MAD</span><%= coiffeur.price %></div>
