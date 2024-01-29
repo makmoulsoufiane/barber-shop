@@ -1,5 +1,5 @@
 // Specific CSS for your home-page
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Space+Grotesk&family=Space+Mono&display=swap');
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -8,51 +8,6 @@ body {
   background-color: #f4f4f4;
   color: #333;
 }
-.steps {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  padding: 50px 0;
-  background-color: #eaeceb; /* Nouvelle couleur de fond pour la section */
-  color: #fff;
-}
-
-.step {
-  flex: 1;
-  margin: 0 20px;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-  background-color: #f38e5f;
-
-}
-
-.step:hover {
-  transform: scale(1.05);
-}
-
-.title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.description {
-  font-size: 16px;
-}
-
-.btn-violet{
-  background-color: black;
-  color: white;
-}
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
 /* Footer Styles */
 .footer-section {
   background: #000;
@@ -299,9 +254,96 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 15px 20px;
-  font-size: 18px;
   background-color: #f38e5f;
-  color: #fff;
+  color: #000000;
   border: none;
   cursor: pointer;
+  border-radius: 45px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  font-weight: 550;
+
 }
+
+.banner-button:hover {
+  background: #f38e5f;
+  color: white;
+  font-size: 1.5em;
+}
+
+
+.section-padding {
+  padding: 120px 0;
+}
+
+p {
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.75em;
+  color: #625c56;
+  margin-bottom: 15px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  word-wrap: break-word;
+}
+
+.section-title {
+  font-size: 80px;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-.5 * var(--bs-gutter-x));
+  margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+.bg-darkbrown {
+  background: #14100c;
+}
+
+
+.section-head .section-title.white {
+  color: #fff;
+}
+
+
+.section-head .section-subtitle {
+  color: #91765a;
+  font-size: 12px;
+  font-weight: 800;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about-rol {
+  color: #aba59f;
+  font-size: 15px;
+}
+
+.about-name {
+  font-size: 15px;
+  color: #91765a;
+  font-family: 'Outfit', sans-serif;
+}
+
+
+
