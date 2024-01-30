@@ -30,6 +30,7 @@
 	line-height: 20px;
 	letter-spacing: 0.5px;
 	margin: 20px 0 30px;
+  color: white;
 }
 
 #login span {
@@ -53,13 +54,13 @@
 
 input.loglog:hover {
 color: #eee;
-background-color: #7b8ab8 !important;
+background-color: #91765a !important;
 }
 
 #login  {
   a.ghost {
     border-radius: 20px;
-    background-color: #ff1e00;
+    background-color: #91765a;
     color: #FFFFFF;
     font-size: 12px;
     font-weight: bold;
@@ -70,7 +71,7 @@ background-color: #7b8ab8 !important;
     border: 1px solid #FFFFFF;
     &:hover {
       background-color: #ffffff;
-      color: #FF1e00;
+      color: #91765a;
     }
   }
 }
@@ -110,7 +111,7 @@ background-color: #7b8ab8 !important;
 			0 10px 10px rgba(0,0,0,0.22);
 	position: relative;
 	overflow: hidden;
-	width: 768px;
+	width: 80%;
 	max-width: 100%;
 	min-height: 480px;
 }
@@ -174,9 +175,9 @@ background-color: #7b8ab8 !important;
 }
 
 .overlay {
-	background: #ff1e00;
-	background: -webkit-linear-gradient(to right, #ff1e00, #ff1e00);
-	background: linear-gradient(to right, #FF1e00, #ff1e00);
+	background: #91765a;
+	background: -webkit-linear-gradient(to right, #91765a, #91765a);
+	background: linear-gradient(to right, #91765a, #91765a);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
