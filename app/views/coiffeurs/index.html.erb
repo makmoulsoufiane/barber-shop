@@ -2,13 +2,12 @@
 <h1 id="title barber" >choose your Barber</h1>
   <div class="d-flex">
     <% @coiffeurs.each do |coiffeur|  %>
-
         <%= link_to coiffeur_path(coiffeur) do  %>
 
         <%= image_tag "" %>
         <div class="card">
           <div class="card-img">
-            <%= image_tag coiffeur.image, class: "barber-img" %>
+            <%= image_tag coiffeur.imagelink, class: "barber-img" %>
           </div>
           <div class="card-title"><%= coiffeur.user.name %></div>
           <hr class="card-divider">
