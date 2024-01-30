@@ -6,7 +6,7 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Outfit', sans-serif;
 	height: 80vh;
   width: 100%;
 }
@@ -89,10 +89,10 @@ background-color: #91765a !important;
 
 #login input {
 	background-color: #eee;
-	border: none;
+	border-radius: 20px;
 	padding: 12px 15px;
 	margin: 8px 0;
-	width: 100%;
+	width: 38vh;
 }
 
 #login input[type="checkbox"] {
