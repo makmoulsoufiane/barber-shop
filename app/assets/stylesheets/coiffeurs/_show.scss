@@ -1,5 +1,23 @@
-/* Ajoutez ce CSS à votre fichier de style ou à la balise <style> dans votre fichier HTML */
 
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.banner{
+    min-height: 100vh;
+    background: linear-gradient(#91765a, #91765a), url("banner-img.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-bottom: 20px;
+=======
 .show-page {
   display: flex;
   width: 100%;
@@ -18,54 +36,4 @@
   width: 100%;
   background-color: rgb(255, 255, 255);
   background-color: rgb(236, 232, 232);
-}
 
-.right-div form {
-  background-color: #000000;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.right-div h2 {
-  color: #333;
-}
-
-.right-div form label {
-  margin-top: 10px;
-  font-weight: bold;
-  color: #555;
-}
-
-.right-div form input,
-.right-div form select {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-.right-div form button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.right-div form button:hover {
-  background-color: #45a049;
-}
-
-/* Styles optionnels pour un design réactif */
-@media (max-width: 600px) {
-  .right-div {
-    width: 100%;
-    margin-top: 20px;
-  }
-}
