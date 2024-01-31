@@ -6,8 +6,11 @@ class BookingsController < ApplicationController
 
 
   def create
+    @coiffeur= Coiffeur.find(params[:id])
     @booking = Booking.new(booking_params)
-    @booking.client = @client.id
+    @booking.coiffeur = @coiffeur
+    @booking.client = current_user
+
     if @booking.save!
       redirect_to bookings_path
     end
@@ -16,6 +19,6 @@ class BookingsController < ApplicationController
   private
 
   def booking_params
-    params.require(:booking).permit(:start, :end, :coiffeur_id)
+    params.require(:booking).permit(:start, :end)
   end
 end

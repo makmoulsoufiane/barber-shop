@@ -9,11 +9,15 @@
   </div>
   <!-- Content for the show page goes here -->
   <div class="right-div">
+    <div class="booking-box">…</div>
     <%= simple_form_for(@booking) do |f| %>
       <%= f.input :start,
           as: :string,
           input_html: { data: { controller: "datepicker" } } %>
-      <%= f.input :coiffeur_id, as: :hidden, input_html: {value: @coiffeur.id} %>
+      <%= f.input :end,
+          as: :string,
+          input_html: { data: { controller: "datepicker" } } %>
+
       <%= f.submit %>
     <% end %>
   </div>
