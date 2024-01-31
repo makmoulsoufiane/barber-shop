@@ -7,10 +7,10 @@ class BookingsController < ApplicationController
 
   def create
     @booking = Booking.new(booking_params)
-    @booking.client = @client.id
-    if @booking.save!
-      redirect_to bookings_path
-    end
+    @booking.client = current_user.client
+    @booking.status = "pending"
+    @booking.save!
+    redirect_to bookings_path
   end
 
   private
