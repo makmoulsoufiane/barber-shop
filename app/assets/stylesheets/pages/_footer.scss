@@ -111,3 +111,49 @@ span, a, a:hover {
   list-style: none;
   word-wrap: break-word;
 }
+
+
+.subscribe form {
+  margin-top: 30px;
+  position: relative;
+}
+
+.subscribe form input {
+  width: 100%;
+  padding: 16px 60px 17px 16px;
+  background-color: transparent;
+  border: 1px solid #91765a;
+  border-radius: 0px;
+  color: #aba59f;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.subscribe form input::placeholder {
+  color: #aba59f;
+}
+
+.subscribe form button {
+  background-color: #91765a;
+  padding: 14px 20px;
+  border-radius: 0px;
+  color: #fff;
+  border: 0;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.subscribe form button:hover {
+  background-color: #fff;
+  color: #14100c;
+  outline: none;
+}
+

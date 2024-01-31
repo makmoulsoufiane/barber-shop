@@ -4,6 +4,10 @@
   <div class="d-flex">
     <% @bookings.each do |booking|  %>
       <p><%= booking.id %></p>
+      <p><%= booking.status %></p>
+      <p>client : <%= booking.client.user.name %></p>
+      <p>coiffeur : <%= booking.coiffeur.user.name %></p>
+      <p><%= booking.id %></p>
     <% end  %>
 
   </div>
