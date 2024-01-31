@@ -1,21 +1,52 @@
 
-    <h1>Barber Detail </h1>
-  <div class="show-page">
-    <div  id="barber-details" class="left-div">
-      <!-- Display detailed information about the selected barber -->
-      <img src="https://res.cloudinary.com/ddxcxbk0w/image/upload/v1706183059/barber_iilmub.png" with="100px" height="100px" alt="Barber Image">
-      <h2>Barber: <%= @coiffeur.user.name %></h2>
-      <p>Specialty: Haircuts, Beard Trims</p>
-      <p>Experience: 5 years</p>
-      <!-- Add more details as needed -->
-    </div>
-    <!-- Content for the show page goes here -->
-    <div class="right-div">
-      <%= simple_form_for(@booking) do |f| %>
-        <%= f.input :start %>
-        <%= f.input :end %>
-        <%= f.input :coiffeur_id, as: :hidden, input_html: {value: @coiffeur.id} %>
-        <%= f.submit %>
-      <% end %>
-    </div>
-  </div>
+
+        <section class = "banner">
+            <h2>BOOK YOUR BARBER</h2>
+            <div class = "card-container">
+                <div class = "card-img">
+                  <h2>Barber: <%= @coiffeur.user.name %></h2>
+                  <%= image_tag @coiffeur.imagelink %>
+                  <p>jgjhjhgjg</p>
+
+                </div>
+
+                <div class = "card-content">
+                    <h3>Reservation</h3>
+                    <form>
+                        <div class = "form-row">
+                            <select name = "days">
+                                <option value = "day-select">Select Day</option>
+                                <option value = "sunday">Sunday</option>
+                                <option value = "monday">Monday</option>
+                                <option value = "tuesday">Tuesday</option>
+                                <option value = "wednesday">Wednesday</option>
+                                <option value = "thursday">Thursday</option>
+                                <option value = "friday">Friday</option>
+                                <option value = "saturday">Saturday</option>
+                            </select>
+
+                            <select name = "hours">
+                                <option value = "hour-select">Select Hour</option>
+                                <option value = "10">10: 00</option>
+                                <option value = "10">12: 00</option>
+                                <option value = "10">14: 00</option>
+                                <option value = "10">16: 00</option>
+                                <option value = "10">18: 00</option>
+                                <option value = "10">20: 00</option>
+                                <option value = "10">22: 00</option>
+                            </select>
+                        </div>
+
+                        <div class = "form-row">
+                            <input type = "text" placeholder="Full Name">
+                            <input type = "text" placeholder="Phone Number">
+                        </div>
+
+                        <div class = "form-row">
+                            <input type = "number" placeholder="How Many Persons?" min = "1">
+                            <input type = "submit" value = "BOOK your ">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
