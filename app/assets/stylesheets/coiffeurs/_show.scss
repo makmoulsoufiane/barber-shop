@@ -21,9 +21,17 @@ body{
     display: grid;
     grid-template-columns: 420px 420px;
 }
-.card-img{
-    background: url("card-img.jpg") center/cover no-repeat;
+
+.card-img img {
+  width: 200px;
+  height: 200px;
 }
+
+.p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
 .banner h2{
     padding-bottom: 40px;
     margin-bottom: 20px;
@@ -75,6 +83,6 @@ form input[type = submit]:hover{
         width: 100vw;
     }
     .card-img{
-        height: 320px;
+        height: 330px;
     }
 }
