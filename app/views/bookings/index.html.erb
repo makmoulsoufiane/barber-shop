@@ -2,11 +2,11 @@
 
 <h1>Bookings</h1>
   <div class="d-flex flex-wrap">
+      <p>coiffeur : <%= current_user.name %></p>
     <% @bookings.each do |booking|  %>
       <p><%= booking.id %></p>
       <p><%= booking.status %></p>
       <p>client : <%= booking.client.user.name %></p>
-      <p>coiffeur : <%= booking.coiffeur.user.name %></p>
       <p><%= booking.id %></p>
       <% if current_user === booking.client %>
         <p> Edit booking </p>
@@ -14,3 +14,25 @@
     <% end  %>
 
   </div>
+
+<p>coiffeur : <%= current_user.name %></p>
+<table class="table table-dark">
+<thead>
+    <tr>
+      <th scope="col">booking id</th>
+      <th scope="col">name</th>
+      <th scope="col">status</th>
+      <th scope="col">Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @bookings.each do |booking|  %>
+      <tr>
+        <td><%= booking.id %></td>
+        <td><%= booking.coiffeur.user.name %></td>
+        <td><%= booking.status %></td>
+        <td class="text-left"><%= booking.start %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
