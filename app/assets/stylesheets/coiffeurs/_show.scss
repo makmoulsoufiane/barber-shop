@@ -1,10 +1,7 @@
-*{
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+
 body{
   font-family: 'Poppins', sans-serif;
+  margin:100px;
 }
 .banner{
   min-height: 100vh;
@@ -18,10 +15,12 @@ body{
 }
 .card-container{
   display: grid;
-  grid-template-columns: 420px 420px;
+  grid-template-columns: 500px 500px;
 }
-.card-img{
-  background: url("card-img.jpg") center/cover no-repeat;
+
+img{
+  width: 80%;
+  margin-bottom: 25px;;
 }
 .banner h2{
   padding-bottom: 40px;
@@ -29,7 +28,7 @@ body{
 }
 .card-content{
   background: #fff;
-  height: 330px;
+  height: 400px;
 }
 .card-content h3{
   text-align: center;
@@ -38,15 +37,18 @@ body{
   font-size: 26px;
   font-weight: 500;
 }
+.card-img {
+flex-direction: column;
+}
 .form-row{
   display: flex;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 form select, form input{
   display: block;
-  width: 100%;
-  margin: 15px 12px;
+  width: 90%;
+  margin: 30px 25px;
   padding: 5px;
   font-size: 15px;
   font-family: 'Poppins', sans-serif;
@@ -57,6 +59,7 @@ form select, form input{
 }
 form input[type = text], form input[type = number], form input::placeholder, select{
   color: #9A9A9A;
+  width: -webkit-fill-available;
 }
 form input[type = submit]{
   color: #fff;
@@ -64,16 +67,8 @@ form input[type = submit]{
   padding: 12px 0;
   border-radius: 4px;
   cursor: pointer;
+  width: -webkit-fill-available;
 }
 form input[type = submit]:hover{
   opacity: 0.9;
-}
-@media(max-width: 992px){
-  .card-container{
-      grid-template-columns: 100%;
-      width: 100vw;
-  }
-  .card-img{
-      height: 320px;
-  }
 }
