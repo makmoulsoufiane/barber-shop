@@ -37,6 +37,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_29_124024) do
   create_table "coiffeurs", force: :cascade do |t|
     t.boolean "availability"
     t.integer "price"
+    t.string "description"
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
