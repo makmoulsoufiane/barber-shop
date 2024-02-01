@@ -1,13 +1,16 @@
 
 
 <h1>Bookings</h1>
-  <div class="d-flex">
+  <div class="d-flex flex-wrap">
     <% @bookings.each do |booking|  %>
       <p><%= booking.id %></p>
       <p><%= booking.status %></p>
       <p>client : <%= booking.client.user.name %></p>
       <p>coiffeur : <%= booking.coiffeur.user.name %></p>
       <p><%= booking.id %></p>
+      <% if current_user === booking.client %>
+        <p> Edit booking </p>
+      <% end %>
     <% end  %>
 
   </div>
