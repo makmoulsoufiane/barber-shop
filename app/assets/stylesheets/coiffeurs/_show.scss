@@ -1,3 +1,14 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+
+
+
+body{
+  font-family: 'Roboto Mono', monospace;
+  margin:100px;
+
 *{
   box-sizing: border-box;
   padding: 0;
@@ -5,10 +16,11 @@
 }
 body{
   font-family: 'Poppins', sans-serif;
+
 }
 .banner{
   min-height: 100vh;
-  background: url("https://cdn.pixabay.com/photo/2022/02/17/21/26/scissors-7019476_1280.jpg") center/cover no-repeat;
+  background: url("https://images.unsplash.com/photo-1595475884562-073c30d45670?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -116,6 +128,8 @@ img{
 .banner h2{
   padding-bottom: 40px;
   margin-bottom: 20px;
+  margin-left: 80px;
+  font-family: 'Roboto Mono', monospace;
 }
 .card-content{
   background: #fff;
@@ -128,8 +142,8 @@ img{
   text-align: center;
   color: #000;
   padding: 25px 0 10px 0;
-  font-size: 26px;
-  font-weight: 500;
+  font-weight: 800;
+  font-family: 'Roboto Mono', monospace;
 }
 .card-img {
 flex-direction: column;
@@ -145,7 +159,7 @@ form select, form input{
   margin: 30px 25px;
   padding: 5px;
   font-size: 15px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   outline: none;
   border: none;
   border-bottom: 1px solid #eee;
@@ -154,10 +168,12 @@ form select, form input{
 form input[type = text], form input[type = number], form input::placeholder, select{
   color: #9A9A9A;
   width: -webkit-fill-available;
+  font-family: 'Roboto Mono', monospace;
 }
 form input[type = submit]{
+  font-family: 'Roboto Mono', monospace;
   color: #fff;
-  background: #91765A;
+  background :#212529a3;
   padding: 12px 0;
   border-radius: 45px;
   cursor: pointer;
@@ -169,10 +185,20 @@ form input[type = submit]:hover{
 
 .barber-desc{
   width: 60%;
-  font-family: ;
+  font-family: 'Roboto Mono', monospace;
+  color: #000;
   border: 5px solid  whitesmoke;
   padding: 12px;
+  font-weight: 500;
+  background-color: #eee;
+
+  h3{
+    color: #000;
+    font-family: 'Roboto Mono', monospace;
+  }
   p {
-    color: white;
+
+    font-family: 'Roboto Mono', monospace;
+    font-size: 22px;
   }
 }
