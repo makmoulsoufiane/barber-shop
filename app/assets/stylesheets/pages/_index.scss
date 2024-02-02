@@ -9,7 +9,9 @@
 "card-img" class, remove css styles
 .card-img .img::before and .card-img .img::after,
 then set the desired styles for .card-img. */
+
 .card {
+  
   --font-color: #323232;
   --font-color-sub: #666;
   --bg-color: #fff;
