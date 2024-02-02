@@ -3,6 +3,7 @@ class CreateCoiffeurs < ActiveRecord::Migration[7.1]
     create_table :coiffeurs do |t|
       t.boolean :availability
       t.integer :price
+      t.string :description
       t.references :user, null: false, foreign_key: true
 
       t.timestamps
