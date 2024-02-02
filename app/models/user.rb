@@ -5,7 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   after_create :create_client
-
+  has_one :client
   def create_client
     Client.create(user: self)
   end
