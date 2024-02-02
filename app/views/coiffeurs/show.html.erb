@@ -4,10 +4,26 @@
         <section class = "banner">
             <h2>BOOK YOUR BARBER</h2>
             <div class = "card-container">
+
                 <div class = "card-img">
-                  <h2>Barber: <%= @coiffeur.user.name %></h2>
-                  <%= image_tag @coiffeur.imagelink %>
-                  <p>jgjhjhgjg</p>
+
+
+                  <div class="e-card playing">
+                  <div class="image" style='background-image: url(<%= @coiffeur.imagelink%>)'></div>
+
+                  <div class="wave"></div>
+                  <div class="wave"></div>
+                  <div class="wave"></div>
+
+
+                      <div class="infotop">
+
+                    
+                  <%= @coiffeur.user.name %>
+                <br>
+                <div class="name">Barber since 1988</div>
+                  </div>
+                </div>
 
                 </div>
 
@@ -51,4 +67,3 @@
                 </div>
             </div>
         </section>
-
