@@ -16,7 +16,7 @@ then set the desired styles for .card-img. */
   --font-color-sub: #666;
   --bg-color: #fff;
   --main-color: #323232;
-  --main-focus: #2d8cf0;
+  --main-focus: #91765A;
   width: 230px;
   height: 300px;
   background: var(--bg-color);
@@ -178,7 +178,9 @@ then set the desired styles for .card-img. */
 }
 
 
-
+.background{
+  background: url("https://cdn.pixabay.com/photo/2022/02/17/21/26/scissors-7019476_1280.jpg") center/cover no-repeat;;
+}
 
 
 
