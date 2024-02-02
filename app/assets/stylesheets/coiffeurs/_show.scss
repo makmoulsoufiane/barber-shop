@@ -119,6 +119,7 @@ body{
 .card-container{
   display: grid;
   grid-template-columns: 420px 420px;
+  margin-right: 300px;
 }
 
 img{
@@ -128,7 +129,7 @@ img{
 .banner h2{
   padding-bottom: 40px;
   margin-bottom: 20px;
-  margin-left: 80px;
+  margin-left: 30px;
   font-family: 'Roboto Mono', monospace;
 }
 .card-content{
