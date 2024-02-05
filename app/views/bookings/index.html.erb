@@ -5,13 +5,13 @@
      <table class="table mx-auto my-4">
       <thead>
         <tr>
-          <th scope="col">Name</th>
+          <th scope="col">Coiffeur name</th>
           <th scope="col">Status</th>
           <th scope="col">Date</th>
         </tr>
       </thead>
       <tbody>
-        <% @bookings.each do |booking| %>
+        <% @bookings.each do |booking|  %>
           <tr>
             <td><%= booking.coiffeur.user.name %></td>
             <td><%= booking.status %></td>
