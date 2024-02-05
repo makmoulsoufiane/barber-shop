@@ -6,6 +6,7 @@ class User < ApplicationRecord
 
   after_create :create_client
   has_one :client
+  has_one :coiffeur
   def create_client
     Client.create(user: self)
   end
