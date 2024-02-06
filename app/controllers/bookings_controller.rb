@@ -5,13 +5,27 @@ class BookingsController < ApplicationController
     @bookings_coiffeur = Booking.where(coiffeur: current_user.coiffeur)
   end
 
+  def show
+    @booking = Booking.find(params[:id])
+    @client = User.find(@booking.client.user_id)
+
+
+    @markers =
+      {
+        lat: @client.latitude,
+        lng: @client.longitude
+      }
+  end
 
   def create
+
     @booking = Booking.new(booking_params)
-    @booking.client = current_user.client
+    @client = Client.where(user: current_user).first
+
+    @booking.client = @client
     @booking.status = "pending"
     @booking.save!
-    redirect_to bookings_path
+    redirect_to booking_path(@booking)
   end
 
   def accept
@@ -33,5 +47,9 @@ class BookingsController < ApplicationController
 
   def booking_params
     params.require(:booking).permit(:start, :end, :coiffeur_id)
+  end
+
+  def client_params
+    params.require(:client).permit(:address, :end, :coiffeur_id)
   end
 end

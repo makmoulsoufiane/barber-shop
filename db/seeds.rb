@@ -1,6 +1,7 @@
 # Destroy existing records
 Coiffeur.destroy_all
 User.destroy_all
+Client.destroy_all
 
 # Users
 User.create!(name: "Soufiane", email: "user1@hotmail.com", password: "123456", phone_number: "0021264882100")
