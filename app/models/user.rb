@@ -4,10 +4,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  after_create :create_client
   has_one :client
   has_one :coiffeur
-  def create_client
-    Client.create(user: self)
-  end
+
+  geocoded_by :address
+  after_validation :geocode, if: :will_save_change_to_address?
 end
