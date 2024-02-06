@@ -25,7 +25,7 @@ class BookingsController < ApplicationController
     @booking.client = @client
     @booking.status = "pending"
     @booking.save!
-    redirect_to booking_path(@booking)
+    redirect_to bookings_path
   end
 
   def accept
