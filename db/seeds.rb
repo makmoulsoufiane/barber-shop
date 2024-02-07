@@ -1,7 +1,7 @@
 # Destroy existing records
 Coiffeur.destroy_all
-User.destroy_all
 Client.destroy_all
+User.destroy_all
 
 # Users
 User.create!(name: "Soufiane", email: "user1@hotmail.com", password: "123456", phone_number: "0021264882100")
@@ -28,7 +28,10 @@ Coiffeur.create!(user_id: User.find_by(name: "Tarik").id, availability: true, pr
 Coiffeur.create!(user_id: User.find_by(name: "Salwa").id, availability: true, price: 50, imagelink: "https://res.cloudinary.com/ddxcxbk0w/image/upload/v1706528162/images_hvmxbn.jpg", description: "Passionate about hair coloring and styling for all occasions.")
 
 # Clients
-Client.create!(user_id: User.first.id, address: "Ain Diab, Casablanca")
-Client.create!(user_id: User.second.id, address: "Bourgogne, Casablanca")
-Client.create!(user_id: User.third.id, address: "El Maarif, Casablanca")
-Client.create!(user_id: User.fourth.id, address: "Roudani 44, Casablanca")
+Client.create!(user_id: User.first.id, address: "Ain Diab, Casablanca Maroc")
+Client.create!(user_id: User.second.id, address: "Bourgogne, Casablanca  Maroc")
+Client.create!(user_id: User.third.id, address: "El Maarif, Casablanca Maroc")
+Client.create!(user_id: User.fourth.id, address: "Roudani 44, Casablanca Maroc")
+Client.create!(user_id: User.fifth.id, address: "Maarif, Casablanca")
+Client.create!(user_id: User.sixth.id, address: "Maarif, Casablanca")
+

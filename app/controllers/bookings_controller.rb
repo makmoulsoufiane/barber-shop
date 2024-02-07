@@ -9,16 +9,13 @@ class BookingsController < ApplicationController
     @booking = Booking.find(params[:id])
     @client = User.find(@booking.client.user_id)
 
-
-    @markers =
-      {
-        lat: @client.latitude,
-        lng: @client.longitude
-      }
+    @markers = [{
+        lat: @client.client.latitude,
+        lng: @client.client.longitude
+      }]
   end
 
   def create
-
     @booking = Booking.new(booking_params)
     @client = Client.where(user: current_user).first
 
