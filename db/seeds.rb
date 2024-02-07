@@ -26,3 +26,9 @@ Coiffeur.create!(user_id: User.find_by(name: "Yousra").id, availability: true, p
 Coiffeur.create!(user_id: User.find_by(name: "Joshua").id, availability: true, price: 85, imagelink: "https://ca.slack-edge.com/T02NE0241-U045BSBJQD6-f9f50ddff2bb-192", description: "Expert in men's grooming, offering personalized consultations.")
 Coiffeur.create!(user_id: User.find_by(name: "Tarik").id, availability: true, price: 55, imagelink: "https://example.com/image9.jpg", description: "Innovative coiffeur known for creating unique and trendy looks.")
 Coiffeur.create!(user_id: User.find_by(name: "Salwa").id, availability: true, price: 50, imagelink: "https://res.cloudinary.com/ddxcxbk0w/image/upload/v1706528162/images_hvmxbn.jpg", description: "Passionate about hair coloring and styling for all occasions.")
+
+# Clients
+Client.create!(user_id: User.first.id, address: "Ain Diab, Casablanca")
+Client.create!(user_id: User.second.id, address: "Bourgogne, Casablanca")
+Client.create!(user_id: User.third.id, address: "El Maarif, Casablanca")
+Client.create!(user_id: User.fourth.id, address: "Roudani 44, Casablanca")
