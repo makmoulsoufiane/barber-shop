@@ -5,5 +5,4 @@ Rails.application.routes.draw do
   resources :bookings
   post "/accept", to: "bookings#accept"
   post "/reject", to: "bookings#reject"
-
 end
