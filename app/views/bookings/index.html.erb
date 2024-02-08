@@ -34,7 +34,7 @@
       <tbody>
         <% @bookings_coiffeur.each do |booking| %>
           <tr>
-            <td><%= booking.client.user.name %></td>
+            <td><%= link_to "#{booking.client.user.name}", booking_path(booking) %></td>
             <td><%= booking.status %></td>
             <td class="text-left"><%= booking.start %></td>
             <td class="text-left">

@@ -8,15 +8,6 @@
 body{
   font-family: 'Roboto Mono', monospace;
   margin:100px;
-
-*{
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-body{
-  font-family: 'Poppins', sans-serif;
-
 }
 .banner{
   min-height: 100vh;
@@ -208,4 +199,23 @@ form input[type = submit]:hover{
     font-size: 22px;
   }
 }
+td.text-left  {
+  form input {
+     width: 100%;
+  margin: 0 12px;
+  padding: 10px 0;
+  font-size: 20px;
+  font-family: 'Roboto Mono', monospace;
+  color: #fff;
+  border-radius: 45px;
+  cursor: pointer;
+  width: 120px;
+  }
+
+  form:first-child input[type = submit]{
+    background :green;
+  }
+  form:last-child input[type = submit]{
+    background :red;
+  }
 }

@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   post "/accept", to: "bookings#accept"
   post "/reject", to: "bookings#reject"
   get '/about',  to: "pages#about", as: 'about'
+
 end
