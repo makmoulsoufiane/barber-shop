@@ -4,6 +4,7 @@
 @import "show";
 @import "footer";
 @import "booking";
+@import "about";
 
 /* before adding the img to the div with the
 "card-img" class, remove css styles
@@ -33,7 +34,7 @@ then set the desired styles for .card-img. */
 }
 
 .card:last-child {
-  justify-content: flex-end;
+  // justify-content: flex-end;
 }
 
 .card-img {
