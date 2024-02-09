@@ -10,9 +10,7 @@ body {
     padding: 20px;
 }
 
-h1 {
-    text-align: center;
-}
+
 
 .founders {
     display: flex;
@@ -37,4 +35,45 @@ h1 {
 
 .founder p {
     color: #666;
+}
+
+
+h1 {
+    text-align: center;
+    border: 2px solid #000;
+    color: #f00;
+    animation: myAnimation 1s infinite;
+}
+
+@keyframes myAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.logo-container {
+  display: flex;
+
+}
+
+
+.logo-container .lewagon {
+  margin-top: 12px;
+  margin-left: 400px;
+}
+
+
+.lewagon {
+  width: 300px;
+  border-radius: 5%;
+}
+
+.logo-container .jobin {
+
 }
